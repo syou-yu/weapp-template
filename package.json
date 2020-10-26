@@ -1,0 +1,52 @@
+{
+  "name": "weapp-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "gulp": "gulp",
+    "watch": "gulp watch",
+    "imagemin": "gulp imagemin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syou-yu/weapp-template.git"
+  },
+  "author": "syou_yu <921393502@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syou-yu/weapp-template/issues"
+  },
+  "homepage": "https://github.com/syou-yu/weapp-template#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-html": "^6.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-less": "^4.0.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-wechat-weapp-src-alisa": "^1.0.3",
+    "lint-staged": "^6.0.0",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard-wxss": "^0.1.1",
+    "stylelint-order": "^4.1.0"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "pathalias": {
+    "@": "${cwd}/src"
+  }
+}
